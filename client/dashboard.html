@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ReWear Dashboard</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 min-h-screen text-gray-800">
+  <div id="header"></div>
+
+  <div class="max-w-5xl mx-auto p-6">
+    <h1 class="text-3xl font-bold text-center mb-6">User Dashboard</h1>
+
+    <!-- Tab Menu -->
+    <div class="flex justify-center space-x-4 mb-8">
+      <button onclick="showTab('profile')" class="tab-btn bg-green-600 text-white px-4 py-2 rounded">Profile</button>
+      <button onclick="showTab('items')" class="tab-btn bg-gray-200 text-gray-800 px-4 py-2 rounded">My Items</button>
+      <button onclick="showTab('swaps')" class="tab-btn bg-gray-200 text-gray-800 px-4 py-2 rounded">Swaps</button>
+    </div>
+
+    <!-- Tabs -->
+    <div id="profile" class="tab-content">
+      <h2 class="text-xl font-semibold mb-4">Profile Info</h2>
+      <div class="bg-white p-4 rounded shadow space-y-2">
+        <p><strong>Name:</strong> Mudit Tak</p>
+        <p><strong>Email:</strong> mudit@example.com</p>
+        <p><strong>Points:</strong> 120</p>
+      </div>
+    </div>
+
+    <div id="items" class="tab-content hidden">
+      <h2 class="text-xl font-semibold mb-4">My Uploaded Items</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+        <!-- Example Item -->
+        <div class="bg-white rounded shadow p-4">
+          <img src="https://via.placeholder.com/150" alt="item" class="mb-2 rounded">
+          <h3 class="font-medium">T-shirt</h3>
+          <p class="text-sm text-gray-500">Size: M | Condition: Good</p>
+          <div class="mt-2 flex space-x-2">
+            <button class="text-sm px-3 py-1 bg-blue-600 text-white rounded">Edit</button>
+            <button class="text-sm px-3 py-1 bg-red-500 text-white rounded">Delete</button>
+          </div>
+        </div>
+        <!-- More items -->
+      </div>
+    </div>
+
+    <div id="swaps" class="tab-content hidden">
+      <h2 class="text-xl font-semibold mb-4">Swap Requests</h2>
+      
+      <!-- Pending -->
+      <h3 class="font-medium text-green-600 mb-2">Pending</h3>
+      <div class="bg-white p-4 rounded shadow mb-4">
+        <p><strong>You requested:</strong> Brown Jacket</p>
+        <p><strong>Status:</strong> Waiting for approval</p>
+      </div>
+
+      <!-- Completed -->
+      <h3 class="font-medium text-blue-600 mb-2">Completed</h3>
+      <div class="bg-white p-4 rounded shadow mb-4">
+        <p><strong>Swap successful with:</strong> Aditi</p>
+        <p><strong>Item:</strong> Summer Dress</p>
+      </div>
+
+      <!-- Incoming -->
+      <h3 class="font-medium text-yellow-600 mb-2">Incoming Requests</h3>
+      <div class="bg-white p-4 rounded shadow mb-4">
+        <p><strong>User:</strong> Rahul wants your Blue Hoodie</p>
+        <div class="mt-2 space-x-2">
+          <button class="px-3 py-1 bg-green-500 text-white rounded">Accept</button>
+          <button class="px-3 py-1 bg-red-500 text-white rounded">Reject</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="footer"></div>
+
+  <!-- JS for Tab Switching -->
+  <script>
+    function showTab(tabId) {
+      document.querySelectorAll('.tab-content').forEach(div => {
+        div.classList.add('hidden');
+      });
+      document.getElementById(tabId).classList.remove('hidden');
+
+      document.querySelectorAll('.tab-btn').forEach(btn => {
+        btn.classList.remove('bg-green-600', 'text-white');
+        btn.classList.add('bg-gray-200', 'text-gray-800');
+      });
+      event.target.classList.add('bg-green-600', 'text-white');
+      event.target.classList.remove('bg-gray-200', 'text-gray-800');
+    }
+  </script>
+  <script src="/Problem3_ReWear/client/js/layout.js"></script>
+
+</body>
+</html>

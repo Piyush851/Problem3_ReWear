@@ -1,18 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/Problem3_ReWear/client/css/style.css">
-    <link rel="stylesheet" href="/Problem3_ReWear/client/css/media.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <title>ReWear - Community Clothing Exchange</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ReWear - Sustainable Fashion</title>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
+
+<body class="bg-white text-gray-800">
+
+    <!--Header  -->
+    <div id="header"></div>
+
+    <!-- Hero Section -->
+    <section class="text-center py-20 bg-gray-50">
+        <h1 class="text-4xl font-bold mb-4">Give Your Clothes a Second Life 🌱</h1>
+        <p class="text-lg mb-6">Exchange unused clothing through swaps or redeem for points.</p>
+        <div class="space-x-4">
+            <button class="bg-green-600 text-white px-6 py-2 rounded hover:bg-green-700">Start Swapping</button>
+            <button class="border border-green-600 text-green-600 px-6 py-2 rounded hover:bg-green-50">Browse
+                Items</button>
+            <button class="border border-gray-600 text-gray-700 px-6 py-2 rounded hover:bg-gray-100">List an
+                Item</button>
+        </div>
+    </section>
+
+    <!-- Featured Items Carousel -->
+    <section class="px-6 py-10">
+        <h2 class="text-2xl font-semibold mb-4 text-center">Featured Items</h2>
+        <div class="flex gap-4 overflow-x-auto pb-4">
+            <!-- Example Item -->
+            <div class="min-w-[200px] bg-white border rounded shadow p-4">
+                <img src="https://via.placeholder.com/150" alt="item" class="mb-2">
+                <h3 class="font-medium">Sweater</h3>
+                <p class="text-sm text-gray-500">Like New</p>
+            </div>
+            <!-- Repeat for more items -->
+            <!-- ... -->
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section class="px-6 py-10">
+        <h2 class="text-2xl font-semibold mb-4 text-center">Categories</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 text-center">
+            <div>
+                <img src="https://img.icons8.com/ios-filled/100/000000/t-shirt.png" class="mx-auto mb-2" />
+                <p class="font-medium">Men</p>
+            </div>
+            <div>
+                <img src="https://img.icons8.com/ios-filled/100/000000/dress-front-view.png" class="mx-auto mb-2" />
+                <p class="font-medium">Women</p>
+            </div>
+            <div>
+                <img src="https://img.icons8.com/ios-filled/100/000000/child-safe-zone.png" class="mx-auto mb-2" />
+                <p class="font-medium">Kids</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why ReWear -->
+    <section class="bg-green-50 py-12 text-center">
+        <h2 class="text-2xl font-semibold mb-4">Why ReWear?</h2>
+        <p class="max-w-xl mx-auto text-gray-700">
+            Promote sustainable fashion and reduce textile waste by swapping your unused clothes.
+            Join a community that values giving fashion a second chance.
+        </p>
+    </section>
+
+    <!-- Footer -->
+     <div id="footer"></div>
+
     
 
+    
+    <script src="/Problem3_ReWear/client/js/layout.js"></script>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-    <script src="/Problem3_ReWear/client/js/script.js"></script>
+    
+
 </body>
+
 </html>
