@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 const { addItem, getAllItems } = require('../controllers/itemController');
 
 // 🔍 Public route to view items
@@ -21,3 +22,14 @@ const { getItemById } = require('../controllers/itemController');
 // 🔍 Single Item Detail
 router.get('/:id', getItemById);
 
+=======
+const express = require("express");
+const router = express.Router();
+const { addItem, getAllItems } = require("../controllers/itemController");
+const auth = require("../middleware/authMiddleware");
+
+router.post("/add", auth, addItem);
+router.get("/", getAllItems);
+
+module.exports = router;
+>>>>>>> f7a930771e9d2c92e6b93deefd601dce9d6e98fd
