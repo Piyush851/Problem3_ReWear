@@ -5,6 +5,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ReWear - Sustainable Fashion</title>
+    <link rel="stylesheet" href="/Problem3_ReWear/client/css/style.css">
+    <link rel="stylesheet" href="/Problem3_ReWear/client/css/media.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
@@ -26,34 +30,26 @@
         </div>
     </section>
 
+    
     <!-- Featured Items Carousel -->
     <section class="px-6 py-10">
         <h2 class="text-2xl font-semibold mb-4 text-center">Featured Items</h2>
-        <div class="flex gap-4 overflow-x-auto pb-4">
-            <!-- Example Item -->
-            <div class="min-w-[200px] bg-white border rounded shadow p-4">
-                <img src="https://via.placeholder.com/150" alt="item" class="mb-2">
-                <h3 class="font-medium">Sweater</h3>
-                <p class="text-sm text-gray-500">Like New</p>
-            </div>
-            <!-- Repeat for more items -->
-            <!-- ... -->
-        </div>
+        <div id="carousel"></div>
     </section>
 
     <!-- Categories Section -->
     <section class="px-6 py-10">
         <h2 class="text-2xl font-semibold mb-4 text-center">Categories</h2>
         <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 text-center">
-            <div>
+            <div class="hvr">
                 <img src="https://img.icons8.com/ios-filled/100/000000/t-shirt.png" class="mx-auto mb-2" />
                 <p class="font-medium">Men</p>
             </div>
-            <div>
+            <div class="hvr">
                 <img src="https://img.icons8.com/ios-filled/100/000000/dress-front-view.png" class="mx-auto mb-2" />
                 <p class="font-medium">Women</p>
             </div>
-            <div>
+            <div class="hvr">
                 <img src="https://img.icons8.com/ios-filled/100/000000/child-safe-zone.png" class="mx-auto mb-2" />
                 <p class="font-medium">Kids</p>
             </div>
@@ -75,7 +71,9 @@
     
 
     
+    <script src="/Problem3_ReWear/client/js/main.js"></script>
     <script src="/Problem3_ReWear/client/js/layout.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
     
 
